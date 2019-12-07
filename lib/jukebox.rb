@@ -36,7 +36,7 @@ def run(songs)
   input = gets.strip
   while input
   puts "Please enter a command:"
-  input = 
+  input =
   case input
     when 'list'
       list(songs)
