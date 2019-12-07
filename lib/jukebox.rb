@@ -12,10 +12,13 @@ end
 
 def list(songs)
   i = 0
-  while 0 < songs.length do
-    message = "#{i + 1}. #{songs[i]}/n"
-    i+=1
+  songs.each_with_index do |index, song|
+    "#{index + 1}. #{song[index]}/n"
   end
+  # while 0 < songs.length do
+  #   message = "#{i + 1}. #{songs[i]}/n"
+  #   i+=1
+  # end
 end
 
 def exit_jukebox
