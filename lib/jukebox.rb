@@ -33,9 +33,10 @@ end
 
 def run(songs)
   #help
+  
+while input
   puts "Please enter a command:"
   input = gets.strip
-  while input
   case input
     when 'list'
       list(songs)
@@ -50,5 +51,5 @@ def run(songs)
       else
         help
       end
-    end
+  end
 end
