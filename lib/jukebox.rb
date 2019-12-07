@@ -10,7 +10,9 @@ end
 def play
 end
 
-def list
+def list(songs)
+  i = 0
+  while 0
 end
 
 def exit_jukebox
