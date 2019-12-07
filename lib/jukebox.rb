@@ -13,7 +13,7 @@ end
 def list(songs)
   i = 0
   while 0 < songs.length do
-    puts "#{i + 1}. #{songs[i]}"
+    message = "#{i + 1}. #{songs[i]}/n"
     i+=1
   end
 end
