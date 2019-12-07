@@ -20,7 +20,7 @@ def play(songs)
   i = 0
   while i < songs.length
   if input == songs[i]
-    return puts "Playing #{songs[i]}"
+    puts "Playing #{songs[i]}"
   else
     puts "Invalid input, please try again"
   end
