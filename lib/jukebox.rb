@@ -17,7 +17,7 @@ end
 def play(songs)
   input = gets.chomp.to_s
   puts "Please enter a song name or number: #{input}"
-  input = input.gets.strip
+  input.gets.strip
   i = 0
   while i < songs.length
   if input == songs[i]
