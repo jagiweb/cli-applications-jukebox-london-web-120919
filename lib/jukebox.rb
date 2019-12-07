@@ -13,7 +13,7 @@ end
 def list(songs)
   i = 0
   songs.each_with_index do |index, song|
-    "#{index + 1}. #{song[index]}/n"
+    puts "#{index}. #{song[index]}/n"
   end
   # while 0 < songs.length do
   #   message = "#{i + 1}. #{songs[i]}/n"
