@@ -33,11 +33,11 @@ end
 
 def run(songs)
   #help
-  command = ""
-  while command
+  input = ""
+  while input
   puts "Please enter a command:"
-  command = gets.downcase.strip
-  case command
+  input = gets.downcase.strip
+  case input
     when 'list'
       list(songs)
       when 'play'
@@ -52,27 +52,6 @@ def run(songs)
         help
       end
     end
-  end
+end
 
-# def run(songs)
-#   play(songs)
-#   input = gets.strip
-#   while input != "exit"
-#     if input == "list"
-#       list(songs)
-#       input
-#     elsif input == "play"
-#       play(songs)
-#       input
-#     elsif input == "help"
-#       help()
-#       input
-#     else
-#       puts "Invalid command"
-#       help()
-#       input
-#     end
-#   end
-#
-#   exit_jukebox()
-# end
+
