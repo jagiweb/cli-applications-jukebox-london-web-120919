@@ -32,24 +32,47 @@ def exit_jukebox
 end
 
 def run(songs)
-  play(songs)
-  input = gets.strip
-  while input != "exit"
-    if input == "list"
+  #help
+  command = ""
+  while command
+  puts "Please enter a command:"
+  command = gets.downcase.strip
+  case command
+    when 'list'
       list(songs)
-      input
-    elsif input == "play"
-      play(songs)
-      input
-    elsif input == "help"
-      help()
-      input
-    else
-      puts "Invalid command"
-      help()
-      input
+      when 'play'
+        list(songs)
+        play(songs)
+      when 'help'
+        help
+      when 'exit'
+        exit_jukebox
+        break
+      else
+        help
+      end
     end
   end
 
-  exit_jukebox()
-end
+# def run(songs)
+#   play(songs)
+#   input = gets.strip
+#   while input != "exit"
+#     if input == "list"
+#       list(songs)
+#       input
+#     elsif input == "play"
+#       play(songs)
+#       input
+#     elsif input == "help"
+#       help()
+#       input
+#     else
+#       puts "Invalid command"
+#       help()
+#       input
+#     end
+#   end
+#
+#   exit_jukebox()
+# end
