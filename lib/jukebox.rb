@@ -16,7 +16,7 @@ end
 
 def play(songs)
   puts "Please enter a song name or number:"
-  input.gets.strip
+  input = gets.strip
   i = 0
   while i < songs.length
   if input == songs[i]
