@@ -12,7 +12,9 @@ end
 
 def list(songs)
   i = 0
-  while 0
+  while 0 < songs.length do
+    puts "#{i + 1}. #{songs[i]}"
+  end
 end
 
 def exit_jukebox
