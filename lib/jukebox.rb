@@ -12,7 +12,7 @@ end
 
 def list(songs)
   i = 0
-  songs.each_with_index do |index, song|
+  songs.each_with_index do |song, index|
     puts "#{index}. #{song[index]}/n"
   end
   # while 0 < songs.length do
