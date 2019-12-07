@@ -33,10 +33,10 @@ end
 
 def run(songs)
   #help
-  input = ""
+  input = gets.strip
   while input
   puts "Please enter a command:"
-  input = gets.downcase.strip
+  input = 
   case input
     when 'list'
       list(songs)
