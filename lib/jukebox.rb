@@ -33,7 +33,7 @@ end
 
 def run(songs)
   #help
-  
+
 while input
   puts "Please enter a command:"
   input = gets.strip
