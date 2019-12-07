@@ -37,10 +37,10 @@ def run(songs)
   if input === exit
     exit_jukebox
   elsif condition
-    
+
   # help()
   # input = prompt()
-  # 
+  #
   while input != "exit"
     if input == "list"
       list(songs)
@@ -50,13 +50,13 @@ def run(songs)
       input
     elsif input == "help"
       help()
-      input 
+      input
     else
       puts "Invalid command"
       help()
       input
     end
   end
-  
+
   exit_jukebox()
 end
