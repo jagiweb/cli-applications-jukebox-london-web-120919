@@ -34,13 +34,6 @@ end
 def run(songs)
   play(songs)
   input = gets.strip
-  if input === exit
-    exit_jukebox
-  elsif condition
-
-  # help()
-  # input = prompt()
-  #
   while input != "exit"
     if input == "list"
       list(songs)
