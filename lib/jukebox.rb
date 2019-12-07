@@ -7,14 +7,17 @@ def help
   puts "- exit : exits this program"
 end
 
-def play
-end
-
 def list(songs)
   i = 0
   songs.each_with_index do |song, index|
     puts "#{index +1}. #{song}/n"
   end
+end
+
+def play(songs)
+  input = gets.chomp.to_s
+
+  puts "Please enter a song"
 end
 
 def exit_jukebox
